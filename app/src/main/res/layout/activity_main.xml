@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingTop="0dp"
+    android:paddingRight="0dp"
+    android:paddingBottom="0dp"
+    tools:context=".MainActivity"
+    android:id="@+id/relativeLayout"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/desk"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivXucard"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:text="开始游戏"
+        android:background="@drawable/selector"
+        android:id="@+id/btnTest"
+        android:layout_alignBottom="@+id/btnCompare"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivNuonuo"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18dp"
+        android:textColor="#d3a809"
+        android:textStyle="bold"
+        android:id="@+id/tvScore"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivXu"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivNuoCard"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <Button
+        android:layout_width="@dimen/abc_action_bar_default_height_material"
+        android:layout_height="56dp"
+        android:text=""
+        android:id="@+id/btnAdd"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/ivNuonuo"
+        android:background="@drawable/add"
+        />
+
+    <Button
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:text=""
+        android:id="@+id/btnReduce"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/btnAdd"
+        android:background="@drawable/reduce"
+        android:layout_marginLeft="12dp"
+        />
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="x1"
+        android:textColor="#FF9900"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/tvPower"
+        android:layout_above="@id/ivNuonuo"
+        android:layout_alignLeft="@id/ivNuonuo"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="继续玩耍"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:id="@+id/btnPlay"
+        android:background="@drawable/selector"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我来开牌!"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:id="@+id/btnCompare"
+        android:background="@drawable/selector"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>
